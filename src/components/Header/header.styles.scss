@@ -1,0 +1,31 @@
+.menu-nav {
+	&__list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+
+	&__list-item {
+		display: inline-block;
+	}
+
+	&__link {
+		display: block;
+		padding: 6px 12px;
+		text-decoration: none;
+
+		&:hover {
+			color: red;
+		}
+
+		&--actived {
+			color: pink;
+		}
+	}
+}
+
+// .menu-nav__list
+// .menu-nav__list-item
+// .menu-nav__link--actived
+
+// BEM: Bloque__Element--Modificador
