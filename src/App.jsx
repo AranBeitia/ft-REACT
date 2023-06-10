@@ -1,15 +1,20 @@
+import React from 'react'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { User } from './views/user/User'
+import { Home } from './views/home/Home'
 import Header from './components/Header/header'
 
 function App() {
 	return (
-		<div>
-			<Header />
-			<h1 className="invertido">hola</h1>
-			<div className="invertido">
-				<p>texto ejemplo</p>
-			</div>
-			<section>Texto ejemplo</section>
-		</div>
+		<React.Fragment>
+			<BrowserRouter>
+				<Header />
+				<Routes>
+					<Route path="/home" element={<Home />} />
+					<Route path="/user" element={<User />} />
+				</Routes>
+			</BrowserRouter>
+		</React.Fragment>
 	)
 }
 
