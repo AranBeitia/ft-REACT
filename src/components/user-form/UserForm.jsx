@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import BaseButton from '../baseButton/BaseButton'
 
 export const UserForm = () => {
 	let navigate = useNavigate()
@@ -71,6 +72,7 @@ export const UserForm = () => {
 				</button>
 				<p>{message}</p>
 			</form>
+			<BaseButton />
 		</>
 	)
 }
