@@ -31,6 +31,12 @@ const TheHeader = () => {
 						<Menu.Item key="profile" icon={<UserOutlined />}>
 							<Link to="/profile">Profile</Link>
 						</Menu.Item>
+						<Menu.Item key="products" icon={<LoginOutlined />}>
+							<Link to="/products">Products</Link>
+						</Menu.Item>
+						<Menu.Item key="cart" icon={<LoginOutlined />}>
+							<Link to="/cart">Cart</Link>
+						</Menu.Item>
 					</>
 				) : (
 					<Menu.Item key="login" icon={<LoginOutlined />}>

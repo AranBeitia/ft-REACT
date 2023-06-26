@@ -1,0 +1,14 @@
+.product {
+	&__container {
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		gap: 2rem;
+	}
+
+	&__item {
+		min-width: 300px;
+		border: 1px solid black;
+		padding: 1rem;
+	}
+}
